@@ -1,88 +1,77 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #87CEEB; /* Light blue background */
+    font-family: 'Nunito', sans-serif;
 }
 
-#noButton {
-  position: absolute;
-  margin-left: 150px;
-  transition: 0.5s;
-  margin-top: 30px;
+/* Container for centering content */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+    background: #FFFFFF; /* White background for content area */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#yesButton {
-  position: absolute;
-  margin-right: 150px;
-  margin-top: 30px;
-}
-
+/* Header text styling */
 .header_text {
-  font-family: "Nunito";
-  font-size: 50px;
-  font-weight: bold;
-
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
+    font-size: 40px;
+    color: #1E90FF; /* Darker blue for contrast */
+    margin-bottom: 20px;
 }
 
-.text {
-  font-family: "Nunito";
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
+/* Button styling */
 .btn {
-  background-color: #017cff;
-  color: white;
-  font-weight: 600;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 3px 3px black;
+    background-color: #1E90FF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
 }
 
 .btn:hover {
-  background-color: #ffffff;
-  color: #017cff;
+    background-color: #00BFFF; /* Lighter blue on hover */
 }
 
+/* Styling for GIF container */
 .gif_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-top: 20px;
 }
-p {
-  color: white;
-  margin-left: 50%;
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .header_text {
+        font-size: 30px; /* Smaller text on small screens */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Smaller buttons on small screens */
+        font-size: 14px;
+    }
 }
-p a {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0.25;
+
+/* Link styling */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
